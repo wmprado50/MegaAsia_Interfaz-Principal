@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Asia | Variedad de productos a buenos precios </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="icon" href="images/logotittle.ico">
+
+</head>
+
+<body id="bodyid">
+    <div id="overlay"></div>
+
+    <header class="header">
+        <div class="cont-mega">
+            <div class="cont mega">
+                <div class="btn-menu">
+                    <button id="btncat2"><i class="fa-solid fa-bars"></i></button>
+                </div>
+
+                <div class="cont-logo">
+                    <img class="logo" id="btnlogoreload" src="images/logo 2 copia blanco.png" />
+                </div>
+                <nav class="buscar cont">
+                    <form class="buscar-form" id="buscar-form">
+                        <input type="search" placeholder="Hola, ¿qué estas buscando?" id="datosform">
+                        <input type="reset" value="X" id="limpiarform">
+                        <button class="btnBuscar">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+
+                    </form>
+                </nav>
+                <div class="cont-user">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="cont-inicio-sesion">
+                        <span id="button" class="text">Iniciar Sesión</span>
+                    </div>
+
+                    <div class="cont-carrito-compras">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="cont-numcompras">
+                            <span class="numero-compras">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cont-responsive-buscarform">
+                <div class="responsive-buscarform">
+                    <form class="buscar-form" id="buscar-form2">
+                        <input type="search" placeholder="Hola, ¿qué estas buscando?" id="datosform2">
+                        <input type="reset" value="X" id="limpiarform2">
+
+                        <button class="btnBuscar">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="cont-barra-busqueda" id="principio">
+            <nav class="barra-busqueda cont">
+                <div class="btn-menu">
+                    <button id="btncat"><i class="fa-solid fa-bars"></i></button>
+                    <a class="text-menucateg">Menú de categorías</a>
+                </div>
+
+
+
+                <div class="container-menucateg" id="menucategorias">
+                    <div class="cont-menucateg" id="cuadrocategorias">
+                        <button id="btncerrar"><i class="fa-solid fa-xmark"></i></button>
+                        <h2 class="title-menucateg">Categorías</h2>
+                        <nav>
+                            <a href="#">Electrodomésticos</a>
+                            <a href="#">Tecnología</a>
+                            <a href="#">Moda</a>
+                            <a href="#">Decohogar</a>
+                            <a href="#">Jardín y terraza</a>
+                            <a href="#">Juguetes</a>
+                            <a href="#">Accesorios</a>
+
+                        </nav>
+
+                    </div>
+                </div>
+                <ul class="menu">
+                    <li><a href="#">Novedades</a></li>
+                    <li><a href="#">Promociones</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="banner">
+            <div class="cont-banner-carrusel">
+
+                <div class="banner-carrusel">
+                    <span id="item-1"></span>
+                    <span id="item-2"></span>
+                    <span id="item-3"></span>
+                    <div class="carrusel-item item-1">
+
+                        <a href="#item-3" class="flecha-ant flecha"> <i id="flecha1"
+                                class="fa-solid fa-chevron-left"></i> </a>
+                        <a href="#item-2" class="flecha-sig flecha"> <i id="flecha2"
+                                class="fa-solid fa-chevron-right"></i> </a>
+                    </div>
+
+                    <div class="carrusel-item item-2">
+
+                        <a href="#item-1" class="flecha-ant flecha"> <i id="flecha3"
+                                class="fa-solid fa-chevron-left"></i> </a>
+                        <a href="#item-3" class="flecha-sig flecha"> <i id="flecha4"
+                                class="fa-solid fa-chevron-right"></i> </a>
+                    </div>
+
+                    <div class="carrusel-item item-3">
+
+                        <a href="#item-2" class="flecha-ant flecha"> <i id="flecha5"
+                                class="fa-solid fa-chevron-left"></i> </a>
+                        <a href="#item-1" class="flecha-sig flecha"> <i id="flecha6"
+                                class="fa-solid fa-chevron-right"></i> </a>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="cont-puntos">
+                <a href="#item-1"><i id="punto1" class="fa-regular fa-circle"></i></a>
+                <a href="#item-2"><i id="punto2" class="fa-regular fa-circle"></i></a>
+                <a href="#item-3"><i id="punto3" class="fa-regular fa-circle"></i></a>
+            </div>
+        </section>
+
+        <section class="responsive-tablet-banner">
+            <div class="cont-responsive-tablet-banner">
+                <section class="responsive-tablet-slider">
+                    <img src="images/banners/banner1.png" alt="">
+                    <img src="images/banners/banner2.png" alt="">
+                    <img src="images/banners/banner3.png" alt="">
+
+                </section>
+
+            </div>
+        </section>
+
+        <section class="responsive-movil-banner">
+            <div class="cont-responsive-movil-banner">
+                <section class="responsive-movil-slider">
+                    <img src="images/banners/movil/bannermovil1.png" alt="">
+                    <img src="images/banners/movil/bannermovil2.png" alt="">
+                    <img src="images/banners/movil/bannermovil3.png" alt="">
+
+                </section>
+
+            </div>
+        </section>
+
+
+        </div>
+        </div>
+
+        </section>
+
+
+
+        <section class="productos">
+            <h1 class="header-1" id="header-productos">Lo más buscado ✨</h1>
+            <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+            <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
+            <div class="product-container">
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="discount-tag">-10%</span>
+                        <img src="images/productosdest/card1.png" class="product-thumb" alt="">
+                        <button class="card-btn">Ver producto</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">adidas</h2>
+                        <p class="product-short-description">Zapatillas Running Hombre</p>
+                        <span class="price">S/.269.90</span>
+                        <span class="actual-price">S/.300</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="discount-tag">-20%</span>
+                        <img src="images/productosdest/card2.png" class="product-thumb" alt="">
+                        <button class="card-btn">Ver producto</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">denimlab</h2>
+                        <p class="product-short-description">jean skinny mujer </p>
+                        <span class="price">S/.67.90</span>
+                        <span class="actual-price">S/.89.90</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/productosdest/card3.png" class="product-thumb" alt="">
+                        <button class="card-btn">Ver producto</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">Converse</h2>
+                        <p class="product-short-description">Zapatillas Urbanas</p>
+                        <span class="price">S/.299.90</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="discount-tag">-30%</span>
+                        <img src="images/productosdest/card11.png" class="product-thumb" alt="">
+                        <button class="card-btn">Ver producto</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">hp</h2>
+                        <p class="product-short-description">Laptop hp intel i5</p>
+                        <span class="price">S/.1119</span>
+                        <span class="actual-price">S/.1599</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/productosdest/card5.png" class="product-thumb" alt="">
+                        <button class="card-btn">Ver producto</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">sybylla</h2>
+                        <p class="product-short-description">polera casual mujer</p>
+                        <span class="price">S/.109.90</span>
+
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/productosdest/card6.png" class="product-thumb" alt="">
+                        <button class="card-btn">Ver producto</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">aldo</h2>
+                        <p class="product-short-description">cartera mujer aldo</p>
+                        <span class="price">S/.149.90</span>
+
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="discount-tag">-30%</span>
+                        <img src="images/productosdest/card7.png" class="product-thumb" alt="">
+                        <button class="card-btn">Ver producto</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">puma</h2>
+                        <p class="product-short-description">Zapatillas Running</p>
+                        <span class="price">S/.125.90</span>
+                        <span class="actual-price">S/.179.90</span>
+
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="discount-tag">-20%</span>
+                        <img src="images/productosdest/card8.png" class="product-thumb" alt="">
+                        <button class="card-btn">Ver producto</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">aldo</h2>
+                        <p class="product-short-description">cartera mujer aldo</p>
+                        <span class="price">S/.199.90</span>
+                        <span class="actual-price">S/.249.90</span>
+
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/productosdest/card18.png" class="product-thumb" alt="">
+                        <button class="card-btn">Ver producto</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">Nintendo</h2>
+                        <p class="product-short-description">Nintendo Switch Oled</p>
+                        <span class="price">S/.1559.90</span>
+
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/productosdest/card19.png" class="product-thumb" alt="">
+                        <button class="card-btn">Ver producto</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">Fossil</h2>
+                        <p class="product-short-description">Reloj cronógrafo Piel</p>
+                        <span class="price">S/.849.90</span>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <h1 class="header-1" id="header-galeria">Categorías para ti 🛒</h1>
+        <section class="galeria">
+
+            <div class="cont-img">
+                <img src="images/galeria/gallery1.png" alt="Gallery Img1" class="galeria-img-1" />
+                <div class="cont-infogal">
+                    <p class="text-info">Electrodomésticos</p>
+                    <button class="btn-vermas">Ver más</span>
+                </div>
+
+            </div>
+            <div class="cont-img">
+                <img src="images/galeria/gallery2.png" alt="Gallery Img2" class="galeria-img-2" />
+                <div class="cont-infogal">
+                    <p class="text-info">Decohogar</p>
+                    <button class="btn-vermas">Ver más</span>
+                </div>
+
+            </div>
+            <div class="cont-img">
+                <img src="images/galeria/gallery3.png" alt="Gallery Img3" class="galeria-img-3" />
+                <div class="cont-infogal">
+                    <p class="text-info">Moda</p>
+                    <button class="btn-vermas">Ver más</span>
+                </div>
+            </div>
+            <div class="cont-img">
+                <img src="images/galeria/gallery4.png" alt="Gallery Img4" class="galeria-img-4" />
+                <div class="cont-infogal">
+                    <p class="text-info">Tecnología</p>
+                    <button class="btn-vermas">Ver más</span>
+                </div>
+            </div>
+            <div class="cont-img">
+                <img src="images/galeria/gallery5.png" alt="Gallery Img5" class="galeria-img-5" />
+                <div class="cont-infogal">
+                    <p class="text-info">Accesorios</p>
+                    <button class="btn-vermas">Ver más</span>
+                </div>
+            </div>
+
+            <div class="cont-img">
+                <img src="images/galeria/gallery6.png" alt="Gallery Img6" class="galeria-img-6" />
+                <div class="cont-infogal">
+                    <p class="text-info">Juguetes</p>
+                    <button class="btn-vermas">Ver más</span>
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <section class="descuentos">
+            <h1 class="header-1" id="header-descuentos">Aprovecha nuestras ofertas 🛍️</h1>
+            <button class="pre-btn2"><img src="images/arrow.png" alt=""></button>
+            <button class="nxt-btn2"><img src="images/arrow.png" alt=""></button>
+
+            <div class="descuentos-container">
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="discount-tag">-10%</span>
+                        <img src="images/productosdest/card10.png" class="product-thumb" alt="">
+                        <button class="card-btn">Ver producto</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">casio</h2>
+                        <p class="product-short-description">reloj analogico-digital</p>
+                        <span class="price">S/.269.90</span>
+                        <span class="actual-price">S/.299.90</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="discount-tag">-35%</span>
+                        <img src="images/productosdest/card12.png" class="product-thumb" alt="">
+                        <button class="card-btn">Ver producto</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">nintendo</h2>
+                        <p class="product-short-description">Controles Joy Con Neon</p>
+                        <span class="price">S/.227.50</span>
+                        <span class="actual-price">S/.350</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="discount-tag">-20%</span>
+                        <img src="images/productosdest/card15.png" class="product-thumb" alt="">
+                        <button class="card-btn">Ver producto</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">tuhome</h2>
+                        <p class="product-short-description">cómoda 4 cajones</p>
+                        <span class="price">S/.424</span>
+                        <span class="actual-price">S/.529.90</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="discount-tag">-10%</span>
+                        <img src="images/productosdest/card13.png" class="product-thumb" alt="">
+                        <button class="card-btn">Ver producto</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">funko</h2>
+                        <p class="product-short-description">funko pop charmander</p>
+                        <span class="price">S/.53.90</span>
+                        <span class="actual-price">S/.59.90</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="discount-tag">-30%</span>
+                        <img src="images/productosdest/card17.png" class="product-thumb" alt="">
+                        <button class="card-btn">Ver producto</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">imaco</h2>
+                        <p class="product-short-description">Licuadora imaco</p>
+                        <span class="price">S/.105</span>
+                        <span class="actual-price">S/.150</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="discount-tag">-20%</span>
+                        <img src="images/productosdest/card16.png" class="product-thumb" alt="">
+                        <button class="card-btn">Ver producto</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">redragon</h2>
+                        <p class="product-short-description">Teclado kumara k552</p>
+                        <span class="price">S/.175.90</span>
+                        <span class="actual-price">S/.219.90</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="discount-tag">-45%</span>
+                        <img src="images/productosdest/card14.png" class="product-thumb" alt="">
+                        <button class="card-btn">Ver producto</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">vizzano</h2>
+                        <p class="product-short-description">Sandalias mujer vizzano</p>
+                        <span class="price">S/.87.90</span>
+                        <span class="actual-price">S/.159.90</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="discount-tag">-10%</span>
+                        <img src="images/productosdest/card20.png" class="product-thumb" alt="">
+                        <button class="card-btn">Ver producto</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">spiderman</h2>
+                        <p class="product-short-description">Piscina Spiderman</p>
+                        <span class="price">S/.35.90</span>
+                        <span class="actual-price">S/.39.90</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="discount-tag">-25%</span>
+                        <img src="images/productosdest/card21.png" class="product-thumb" alt="">
+                        <button class="card-btn">Ver producto</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">just home</h2>
+                        <p class="product-short-description">Lámpara de Mesa</p>
+                        <span class="price">S/.112.90</span>
+                        <span class="actual-price">S/.149.90</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="galeria2">
+            <h1 class="header-1" id="header-galeria">Descuentos de Invierno ☃️</h1>
+            <div class="grid-galeria2">
+                <div class="grid-item alto" style="background-image: url(images/galeria2/gallery2-1.png);"></div>
+                <div class="grid-item" style="background-image: url(images/galeria2/gallery2-2.png);"> </div>
+                <div class="grid-item ancho" style="background-image: url(images/galeria2/gallery2-3.png);"></div>
+                <div class="grid-item" style="background-image: url(images/galeria2/gallery2-4.png);"> </div>
+                <div class="grid-item" style="background-image: url(images/galeria2/gallery2-5.png);"> </div>
+                <div class="grid-item" style="background-image: url(images/galeria2/gallery2-6.png);"> </div>
+                <div class="grid-item" style="background-image: url(images/galeria2/gallery2-7.png);"> </div>
+                <div class="grid-item" style="background-image: url(images/galeria2/gallery2-8.png);"> </div>
+                <div class="grid-item" style="background-image: url(images/galeria2/gallery2-9.png);"> </div>
+                <div class="grid-item" style="background-image: url(images/galeria2/gallery2-10.png);"> </div>
+            </div>
+        </section>
+
+        <section class="container blogs">
+            <h1 class="header-1" id="header-blog">Últimos artículos del blog 💬</h1>
+
+            <div class="container-blogs">
+                <div class="card-blog">
+                    <div class="container-img">
+                        <img src="images/blog/blog1.jpg" alt="Imagen Blog 1">
+                    </div>
+                    <div class="content-blog">
+                        <h3>Tecnología</h3>
+                        <h2>¿Cómo recuperar mis contactos de mi celular? 5 métodos infalibles </h2>
+                        <p>Perder contactos puede ser estresante, sobre todo cuando se trata de clientes
+                            y amigos muy cercanos. Entonces ¿cómo recuperar mis contactos de mi celular?
+                            Ya sea accidental, por robo, formateo o alguna falla de software aquí encontrarás 5
+                            soluciones.</p>
+
+                    </div>
+                    <button class="btn-leer-mas">Leer más</button>
+                </div>
+
+                <div class="card-blog">
+                    <div class="container-img">
+                        <img src="images/blog/blog2.jpg" alt="Imagen Blog 2">
+                    </div>
+                    <div class="content-blog">
+                        <h3>Hogar</h3>
+                        <h2>¿Por qué se calienta el refrigerador? Causas y soluciones </h2>
+                        <p>¿Te preguntas por qué se calienta el refrigerador? Es probable que pienses que algo
+                            anda mal con tu refri y que ahora tus alimentos se van a echar perder, pero tranquilo
+                            tenemos
+                            la respuesta a esta inquietud así como algunos tips para los cuidados que merece.</p>
+
+                    </div>
+                    <button class="btn-leer-mas">Leer más</button>
+                </div>
+
+                <div class="card-blog">
+                    <div class="container-img">
+                        <img src="images/blog/blog3.jpg" alt="Imagen Blog 3">
+                    </div>
+                    <div class="content-blog">
+                        <h3>Moda</h3>
+                        <h2>¿Cuáles son las mejores marcas de zapatillas en 2023? </h2>
+                        <p>Es imposible negar que las zapatillas son el calzado más popular del momento. Desde canales
+                            de
+                            YouTube dedicados a hacer reviews a los nuevos modelos de zapatillas hasta coleccionistas de
+                            colaboraciones entre marcas de zapatillas y famosos.</p>
+
+                    </div>
+                    <button class="btn-leer-mas">Leer más</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="cont-video">
+            <h1 class="header-1">Conócenos mejor 😉</h1>
+
+            <div class="cont-infoabout">
+                <div class="cont-descripcion">
+                    <h2>¿Qué es MEGA ASIA?</h2>
+                    <p>Es un centro comercial de venta de diferentes artículos importados de China
+                        para uso en el hogar. Tiene una gran diversidad de productos como: Electrodomésticos,
+                        productos de limpieza y belleza, decorativos variados, juguetes, prendas de vestir,
+                        accesorios, herramientas, celulares, útiles escolares, entre otros.</p>
+                    <p>Actualmente cuenta
+                        con una valoración mayormente positiva por parte de los clientes, teniendo 4.2 estrellas
+                        en las reseñas de Google</p>
+
+                </div>
+                <div class="video-box">
+                    <div class="video-asia">
+                        <video class="video" controls>
+                            <source src="videos/MegaAsia.mp4" type="video/mp4">
+                            Tu navegador no es compatible para reproducir video
+                        </video>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="info-contacto">
+                    <p class="titulo-footer">Comunícate con nosotros</p>
+                    <ul>
+                        <li>Número de contacto: 888 777</li>
+                        <li>Ubícanos: Av. América Oeste 108, Trujillo 13011</li>
+                        <li>Correo: servicioalcliente@masia.pe</li>
+
+                    </ul>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://www.facebook.com/mega.asia.trujillo/" class="facebook"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <span class="twitter"><i class="fa-brands fa-twitter"></i></span>
+                        <span class="youtube"><i class="fa-brands fa-youtube"></i></span>
+                    </div>
+                </div>
+
+                <div class="nosotros-info">
+                    <p class="titulo-footer">Sobre MegaAsia</p>
+                    <ul>
+                        <li><a href="#">¿Quiénes somos?</a></li>
+                        <li><a href="#">Horarios de Atención</a></li>
+                        <li><a href="#">Trabaja con nosotros</a></li>
+                        <li><a href="#">Canal de denuncias</a></li>
+                        <li><a href="#">Visita nuestro Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="seguridad-compra">
+                    <p class="titulo-footer">Seguridad en la Compra</p>
+                    <ul>
+                        <li><a href="#">¿Cómo comprar por MegaAsia.com</a></li>
+                        <li><a href="#">Guía de Compra</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Seguridad y Privacidad</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="cuenta-info">
+                    <p class="titulo-footer">Acerca de mi cuenta</p>
+                    <ul>
+                        <li><a href="#">Mi cuenta MegaAsia</a></li>
+                        <li><a href="#">Puntos acumulados</a></li>
+                        <li><a href="#">Historial de Compra</a></li>
+                        <li><a href="#">Reembolsos</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                <p>© TODOS LOS DERECHOS RESERVADOS</p>
+
+            </div>
+        </div>
+
+
+    </footer>
+
+    <a href="#principio"> <img src="images/btnirarriba.png" id="irArriba"> </a>
+
+    <script src="https://kit.fontawesome.com/17d4bb8e2f.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    
+</body>
+
+</html>
